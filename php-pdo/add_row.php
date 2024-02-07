@@ -7,7 +7,7 @@ if (isset($_POST['submit'])){
     $bas = isset($_POST['bas']) ? $_POST['bas'] : '';
 
     if (!empty($ville) && !empty($haut) && !empty($bas)){
-        $query = $bdd->prepare('INSERT INTO meteo (ville, bas, haut) VALUES (:ville, :bas, :haut)');
+        $query = $bdd->prepare('INSERT INTO météo (ville, bas, haut) VALUES (:ville, :bas, :haut)');
         $query->execute(array(':ville' => $ville, ':bas' => $bas, ':haut' => $haut));
         header("Location: index.php");
         exit();
