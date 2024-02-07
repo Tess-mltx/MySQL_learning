@@ -1,7 +1,7 @@
 <?php
 try
 {
-	// On se connecte à MySQL
+	// On se connecte à la DB
 	$bdd = new PDO('mysql:host=localhost;dbname=weatherapp;charset=utf8', 'root', '');
 }
 catch(Exception $e)
