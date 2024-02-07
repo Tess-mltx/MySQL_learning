@@ -33,7 +33,7 @@ require_once('delete.php');
                 <td>' . $row["ville"] . '</td>
                 <td>' . $row["haut"] . '</td>
                 <td>' . $row["bas"] . '</td>
-                <td> <input type= "checkbox" name="checkbox[]" value="'. $row["ville"] .'"></td>
+                <td> <input type="checkbox" name="checkbox[]" value="'. $row["ville"] .'"></td>
                 </tr>';
             }
             echo '</table>';
@@ -41,7 +41,7 @@ require_once('delete.php');
         // Fermeture de la connexion à la base de données
             $bdd = null;
         ?>
-            <input type="submit" name="deleteVille" value="Supprimer les villes sélectionées">
+            <input type="submit" name="submit" value="Supprimer les villes sélectionées">
         </form>
 
         <h2>Add row to DB </h2>
