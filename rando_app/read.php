@@ -11,6 +11,9 @@ require('src/connect.php');
 </head>
 
 <body>
+  <header>
+    <a href="log-in.php">Se connecter</a>
+  </header>
   <h1>Liste des randonnées</h1>
   <table>
     <!-- Afficher la liste des randonnées -->
